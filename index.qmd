@@ -1,0 +1,9 @@
+# Overview {.unnumbered}
+
+Welcome to the quarto textbook template. Customize your book setup by editing the following code. It will create a project at the specified path (e.g., the code below will create a new folder called "book" in your working directory), render the demo book in Quarto, open the book in a web browser, and open the project in a new RStudio window. 
+
+Welcome to the installing R guide. 
+
+See @sec-instructions for details of how to further customize the book.
+
+

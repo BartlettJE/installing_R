@@ -13,6 +13,10 @@ book:
     name:
       family: Bartlett
       given: James
+  - orcid: 0000-0002-4191-5245
+    name:
+      family: Stevenson
+      given: Jude
     roles: ~
   doi: ''
   license: CC-BY

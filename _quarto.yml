@@ -46,7 +46,7 @@ book:
     header: ''
     footer: ''
   margin-header: ''
-  page-footer: CC-BY (2024) c("James", "Bartlett", "0000-0002-4191-5245")
+  page-footer: CC-BY (2024) James Bartlett
   chapters:
   - index.qmd
   - instructions.qmd

@@ -1,9 +1,13 @@
 # Overview {.unnumbered}
 
-Welcome to the quarto textbook template. Customize your book setup by editing the following code. It will create a project at the specified path (e.g., the code below will create a new folder called "book" in your working directory), render the demo book in Quarto, open the book in a web browser, and open the project in a new RStudio window. 
+In this guide, we demonstrate how to download and install the software R/RStudio on your computer which you will use throughout your degree. If you cannot download R/RStudio to your own computer, there is also a chapter guiding you through using the software on the library/lab computers. 
 
-Welcome to the installing R guide. 
+See @sec-installing-r-windows if you have a Windows computer. 
 
-See @sec-instructions for details of how to further customize the book.
+See @sec-installing-r-mac if you have a Mac. 
+
+See @sec-library-computer if you need to use the library/lab computers. 
+
+Every now and again, you need to update R/RStudio or the packages you use, so there is @sec-updating-r to support you there. 
 
 

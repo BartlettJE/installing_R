@@ -1,0 +1,3 @@
+# Using R/RStudio on a University Computer {#sec-library-computer}
+
+Screenshots / instructions of using R on a library computer. 

@@ -6,7 +6,7 @@ project:
 execute:
   freeze: auto
 book:
-  title: Installing R
+  title: Installing R/RStudio Guide
   subtitle: ''
   author:
   - orcid: 0000-0002-4191-5245
@@ -20,7 +20,7 @@ book:
     roles: ~
   doi: ''
   license: CC-BY
-  description: Book Description
+  description: This guide provides instructions for installing R/RStudio for students at the University of Glasgow.
   cover-image: images/logos/logo.png
   image: images/logos/logo.png
   favicon: images/logos/logo.png
@@ -28,13 +28,6 @@ book:
   google-analytics: ''
   page-navigation: true
   search: true
-  downloads:
-  - pdf
-  - epub
-  sharing:
-  - twitter
-  - facebook
-  - linkedin
   sidebar:
     title: ''
     logo: ''
@@ -53,10 +46,10 @@ book:
   page-footer: CC-BY (2024) James Bartlett
   chapters:
   - index.qmd
-  - instructions.qmd
-  appendices:
-  - webexercises.qmd
-  - references.qmd
+  - installing-r-windows.qmd
+  - installing-r-mac.qmd
+  - installing-r-library.qmd
+  - updating-r.qmd
 bibliography: include/references.bib
 csl: include/apa.csl
 format:

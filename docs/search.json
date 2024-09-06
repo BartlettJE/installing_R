@@ -4,7 +4,10 @@
     "href": "index.html",
     "title": "Installing R/RStudio Guide",
     "section": "",
-    "text": "Overview\nIn this guide, we demonstrate how to download and install the software R/RStudio on your computer which you will use throughout your degree. If you cannot download R/RStudio to your own computer, there is also a chapter guiding you through using the software on the library/lab computers.\nSee Chapter 1 if you have a Windows computer.\nSee Chapter 2 if you have a Mac.\nSee Chapter 3 if you need to use the library/lab computers.\nEvery now and again, you need to update R/RStudio or the packages you use, so there is Chapter 4 to support you there."
+    "text": "Overview\nIn this R(eady)SetGo guide, we demonstrate how to download and install the software R/RStudio on your computer which you will use throughout your degree. If you cannot download R/RStudio to your own computer, there is also a chapter guiding you through using the software on the library/lab computers.\nSee 1  Installing R/RStudio for Windows if you have a Windows computer.\nSee 2  Installing R/RStudio for Mac if you have a Mac.\nSee 3  Using R/RStudio on a University Computer if you need to use the library/lab computers.\nEvery now and again, you need to update R/RStudio or the packages you use, so there is 4  Updating R, RStudio, and packages to support you there.",
+    "crumbs": [
+      "Overview"
+    ]
   },
   {
     "objectID": "instructions.html#sec-setup",
@@ -67,97 +70,189 @@
     "href": "updating-r.html#updating-r",
     "title": "4  Updating R, RStudio, and packages",
     "section": "\n4.2 Updating R",
-    "text": "4.2 Updating R\nFinally, you may also wish to update R itself. The key thing to be aware of is that when you update R, if you just download the latest version from the website, you will lose all your packages.\n\n4.2.1 Windows\nThe easiest way to update R on Windows and not cause yourself a huge headache is to use the installr package. When you use the updateR() function, a series of dialogue boxes will appear. These should be fairly self-explanatory but there is a full step-by-step guide available for how to use installr, the important bit is to select “Yes” when it asked if you would like to copy your packages from the older version of R.\n\n# Install the installr package\ninstall.packages(\"installr\")\n\n# Run the update function\ninstallR::updateR()\n\n\n4.2.2 Mac\nFor a Mac, you can use the updateR package. You’ll need to install this from GitHub. You will be asked to type your system password (that you use to log into your computer) in the console pane. If relevant, it will ask you if you want to restore your packages for a new major version.\n\n# install from github\ndevtools::install_github(\"AndreaCirilloAC/updateR\")\n\n# update your R version, you will need your system password\nupdateR::updateR()"
+    "text": "4.2 Updating R\nFinally, you may also wish to update R itself. The key thing to be aware of is that when you update R, if you just download the latest version from the website, you will lose all your packages.\n\n4.2.1 Windows\nThe easiest way to update R on Windows and not cause yourself a huge headache is to use the installr package. When you use the updateR() function, a series of dialogue boxes will appear. These should be fairly self-explanatory but there is a full step-by-step guide available for how to use installr, the important bit is to select “Yes” when it asked if you would like to copy your packages from the older version of R.\n\n# Install the installr package\ninstall.packages(\"installr\")\n\n# Run the update function\ninstallR::updateR()\n\n\n4.2.2 Mac\nFor a Mac, you can use the updateR package. You’ll need to install this from GitHub. You will be asked to type your system password (that you use to log into your computer) in the console pane. If relevant, it will ask you if you want to restore your packages for a new major version.\n\n# install from github\ndevtools::install_github(\"AndreaCirilloAC/updateR\")\n\n# update your R version, you will need your system password\nupdateR::updateR()",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Updating R, RStudio, and packages</span>"
+    ]
   },
   {
     "objectID": "updating-r.html#updating-packages",
     "href": "updating-r.html#updating-packages",
     "title": "4  Updating R, RStudio, and packages",
     "section": "\n4.3 Updating packages",
-    "text": "4.3 Updating packages\nPackage developers will occasionally release updates to their packages. This is typically to add in new functions to the package, or to fix or amend existing functions. Be aware that some package updates may cause your previous code to stop working. This does not tend to happen with minor updates to packages, but occasionally with major updates, you can have serious issues if the developer has made fundamental changes to how the code works. For this reason, we recommend updating all your packages once at the beginning of each academic year (or semester) - don’t do it before an assessment or deadline just in case!\nTo update an individual package, the easiest way is to use the install.packages() function, as this always installs the most recent version of the package.\n\ninstall.packages(\"tidyverse\")\n\nTo update multiple packages, or indeed all packages, RStudio provides helpful tools. Click Tools &gt; Check for Package Updates. A dialogue box will appear and you can select the packages you wish to update. Be aware that if you select all packages, this may take some time and you will be unable to use R whilst the process completes.\n\n\n\n\nUpdating packages with RStudio"
+    "text": "4.3 Updating packages\nPackage developers will occasionally release updates to their packages. This is typically to add in new functions to the package, or to fix or amend existing functions. Be aware that some package updates may cause your previous code to stop working. This does not tend to happen with minor updates to packages, but occasionally with major updates, you can have serious issues if the developer has made fundamental changes to how the code works. For this reason, we recommend updating all your packages once at the beginning of each academic year (or semester) - don’t do it before an assessment or deadline just in case!\nTo update an individual package, the easiest way is to use the install.packages() function, as this always installs the most recent version of the package.\n\ninstall.packages(\"tidyverse\")\n\nTo update multiple packages, or indeed all packages, RStudio provides helpful tools. Click Tools &gt; Check for Package Updates. A dialogue box will appear and you can select the packages you wish to update. Be aware that if you select all packages, this may take some time and you will be unable to use R whilst the process completes.\n\n\n\n\nUpdating packages with RStudio",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Updating R, RStudio, and packages</span>"
+    ]
   },
   {
     "objectID": "updating-r.html#sec-package-install-troubleshooting",
     "href": "updating-r.html#sec-package-install-troubleshooting",
     "title": "4  Updating R, RStudio, and packages",
     "section": "\n4.4 Troubleshooting",
-    "text": "4.4 Troubleshooting\nOccasionally, you might have a few problem packages that seemingly refuse to update. For me, rlang and vctrs cause me no end of trouble. These aren’t packages that you will likely every explicitly load, but they’re required beneath the surface for R to do things like knit your Markdown files etc.\n\n4.4.1 Non-zero exit status\nIf you try to update a package and get an error message that says something like Warning in install.packages : installation of package ‘vctrs’ had non-zero exit status or perhaps Error in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]) :  namespace 'rlang' 0.4.9 is being loaded, but &gt;= 0.4.10 is required one solution I have found is to manually uninstall the package, restart R, and then install the package new, rather than trying to update an existing version. The installr package also has a useful function for uninstalling packages.\n\n# Load installr\nlibrary(installr)\n\n# Uninstall the problem package\nuninstall.packages(\"package_name\")\n\n# Then restart R using session - restart R\n# Then install the package fresh\n\ninstall.packages(\"package\")\n\n\n4.4.2 Cannot open file\nYou may get the following error after trying to install any packages at all:\n\nError in install packages : Cannot open file ‘C:/…..’: Permission denied\n\nThis usually indicates a permissions problem with writing to the default library (the folder that packages are kept in). Sometimes this means that you need to install R and RStudio as administrator or run it as administrator.\nOne other fix may be to change the library location using the following code (check in “C:/Program Files/R” for what version you should have instead of “R-3.5.2”):\n\n# change the library path\n.libPaths(c(\"C:/Program Files/R/R-3.5.2/library\"))\n\nIf that works and you can install packages, set this library path permanently:\n\nInstall the usethis package\nRun usethis::edit_r_profile() in the console; it will open up a blank file\nPaste into the file (your version of): .libPaths(c(\"C:/Program Files/R/R-3.5.2/library\"))\n\nSave and close the file\nRestart R for changes to take effect\n\nThe code in your .Rprofile will now run every time you start up R.\nAs always, if you’re having issues, please ask on Teams or come to office hours."
+    "text": "4.4 Troubleshooting\nOccasionally, you might have a few problem packages that seemingly refuse to update. For me, rlang and vctrs cause me no end of trouble. These aren’t packages that you will likely every explicitly load, but they’re required beneath the surface for R to do things like knit your Markdown files etc.\n\n4.4.1 Non-zero exit status\nIf you try to update a package and get an error message that says something like Warning in install.packages : installation of package ‘vctrs’ had non-zero exit status or perhaps Error in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]) :  namespace 'rlang' 0.4.9 is being loaded, but &gt;= 0.4.10 is required one solution I have found is to manually uninstall the package, restart R, and then install the package new, rather than trying to update an existing version. The installr package also has a useful function for uninstalling packages.\n\n# Load installr\nlibrary(installr)\n\n# Uninstall the problem package\nuninstall.packages(\"package_name\")\n\n# Then restart R using session - restart R\n# Then install the package fresh\n\ninstall.packages(\"package\")\n\n\n4.4.2 Cannot open file\nYou may get the following error after trying to install any packages at all:\n\nError in install packages : Cannot open file ‘C:/…..’: Permission denied\n\nThis usually indicates a permissions problem with writing to the default library (the folder that packages are kept in). Sometimes this means that you need to install R and RStudio as administrator or run it as administrator.\nOne other fix may be to change the library location using the following code (check in “C:/Program Files/R” for what version you should have instead of “R-3.5.2”):\n\n# change the library path\n.libPaths(c(\"C:/Program Files/R/R-3.5.2/library\"))\n\nIf that works and you can install packages, set this library path permanently:\n\nInstall the usethis package\nRun usethis::edit_r_profile() in the console; it will open up a blank file\nPaste into the file (your version of): .libPaths(c(\"C:/Program Files/R/R-3.5.2/library\"))\n\nSave and close the file\nRestart R for changes to take effect\n\nThe code in your .Rprofile will now run every time you start up R.\nAs always, if you’re having issues, please ask on Teams or come to office hours.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Updating R, RStudio, and packages</span>"
+    ]
   },
   {
     "objectID": "installing-r-windows.html#installing-base-r",
     "href": "installing-r-windows.html#installing-base-r",
     "title": "1  Installing R/RStudio for Windows",
-    "section": "\n1.1 Installing Base R",
-    "text": "1.1 Installing Base R\nInstall base R. Choose the download link for your operating system (Linux, Mac OS X, or Windows).\nIf you have a Mac, install the latest release from the newest R-x.x.x.pkg link (or a legacy version if you have an older operating system). You may also need to install XQuartz to be able to use some visualisation packages.\nIf you are installing the Windows version, choose the “base” subdirectory and click on the download link at the top of the page.\nIf you are using Linux, choose your specific operating system and follow the installation instructions.\n\n\n\n\n\n\nInstallation Location\n\n\n\nIt can often cause problems to install R on a network or cloud drive, such as OneDrive or DropBox. It’s better to install these programs on your computer’s drive. Depending on your computer’s settings, you may have to get IT support to give you access to installing programs.\nIt can also cause rare, but hard-to-debug problems if any of the folders in the path where you install R have non-Latin characters, including Chinese characters or Latin characters with accents (e.g., C:\\\\Daniël\\Programs\\)."
+    "section": "",
+    "text": "Installation Location\n\n\n\nIt can often cause problems to install R on a network or cloud drive, such as OneDrive or DropBox. It’s better to install these programs on your computer’s drive. Depending on your computer’s settings, you may have to get IT support to give you access to installing programs.\nIt can also cause rare, but hard-to-debug problems if any of the folders in the path where you install R have non-Latin characters, including Chinese characters or Latin characters with accents (e.g., C:\\\\Daniël\\Programs\\).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Installing R/RStudio for Windows</span>"
+    ]
   },
   {
     "objectID": "installing-r-windows.html#installing-rstudio",
     "href": "installing-r-windows.html#installing-rstudio",
     "title": "1  Installing R/RStudio for Windows",
     "section": "\n1.2 Installing RStudio",
-    "text": "1.2 Installing RStudio\nGo to rstudio.com and download the RStudio Desktop (Open Source License) version for your operating system under the list titled Installers for Supported Platforms."
+    "text": "1.2 Installing RStudio\nGo to rstudio.com and download the RStudio Desktop (Open Source License) version for your operating system under the list titled Installers for Supported Platforms.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Installing R/RStudio for Windows</span>"
+    ]
   },
   {
     "objectID": "installing-r-windows.html#installing-rtools",
     "href": "installing-r-windows.html#installing-rtools",
     "title": "1  Installing R/RStudio for Windows",
     "section": "\n1.3 Installing RTools",
-    "text": "1.3 Installing RTools\nIf you are using Windows, after you install R, you should also install RTools; use the “recommended” version highlighted near the top of the list. RTools is used for installing and loading some packages. You can get started without installing RTools, but if you’re having problems with installing and loading some packages, this should be the first thing you try.\nRTools will require you to put it “on the PATH”. The instructions for this can seem a bit vague - the easiest way to do it is to open RStudio, run the below code in the console:\n\nwrite('PATH=\"${RTOOLS40_HOME}\\\\usr\\\\bin;${PATH}\"', file = \"~/.Renviron\", append = TRUE)\n\nOnce you’ve done that, restart R by clicking Session - Restart R and then run the below code in the console which should give you the path to your RTools installation:\n\nSys.which(\"make\")\n\n           make \n\"/usr/bin/make\""
+    "text": "1.3 Installing RTools\nIf you are using Windows, after you install R, you should also install RTools; use the “recommended” version highlighted near the top of the list. RTools is used for installing and loading some packages. You can get started without installing RTools, but if you’re having problems with installing and loading some packages, this should be the first thing you try.\nRTools will require you to put it “on the PATH”. The instructions for this can seem a bit vague - the easiest way to do it is to open RStudio, run the below code in the console:\n\nwrite('PATH=\"${RTOOLS40_HOME}\\\\usr\\\\bin;${PATH}\"', file = \"~/.Renviron\", append = TRUE)\n\nOnce you’ve done that, restart R by clicking Session - Restart R and then run the below code in the console which should give you the path to your RTools installation:\n\nSys.which(\"make\")\n\n           make \n\"/usr/bin/make\"",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Installing R/RStudio for Windows</span>"
+    ]
   },
   {
     "objectID": "installing-r-windows.html#sec-rstudio-settings",
     "href": "installing-r-windows.html#sec-rstudio-settings",
     "title": "1  Installing R/RStudio for Windows",
     "section": "\n1.4 RStudio Settings",
-    "text": "1.4 RStudio Settings\nThere are a few settings you should fix immediately after updating RStudio. Go to Tools &gt; Global Options… (⌘,), and in the General tab, uncheck the box that says Restore .RData into workspace at startup. If you keep things around in your workspace, things will get messy, and unexpected things will happen. You should always start with a clear workspace. This also means that you never want to save your workspace when you exit, so set this to Never. The only thing you want to save are your scripts.\nYou may also want to change the appearance of your code. Different fonts and themes can sometimes help with visual difficulties or dyslexia.\n\n\n\n\nRStudio General and Appearance settings\n\n\n\nYou may also want to change the settings in the Code tab. For example, Lisa prefers two spaces instead of tabs for my code and likes to be able to see the whitespace characters. But these are all a matter of personal preference.\n\n\n\n\nRStudio Code settings"
+    "text": "1.4 RStudio Settings\nThere are a few settings you should fix immediately after updating RStudio. Go to Tools &gt; Global Options… (⌘,), and in the General tab, uncheck the box that says Restore .RData into workspace at startup. If you keep things around in your workspace, things will get messy, and unexpected things will happen. You should always start with a clear workspace. This also means that you never want to save your workspace when you exit, so set this to Never. The only thing you want to save are your scripts.\nYou may also want to change the appearance of your code. Different fonts and themes can sometimes help with visual difficulties or dyslexia.\n\n\n\n\n\n\n\nRStudio General and Appearance settings\n\n\n\nYou may also want to change the settings in the Code tab. For example, Lisa prefers two spaces instead of tabs for my code and likes to be able to see the whitespace characters. But these are all a matter of personal preference.\n\n\n\n\n\n\n\nRStudio Code settings",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Installing R/RStudio for Windows</span>"
+    ]
   },
   {
     "objectID": "installing-r-windows.html#installing-latex",
     "href": "installing-r-windows.html#installing-latex",
     "title": "1  Installing R/RStudio for Windows",
     "section": "\n1.5 Installing LaTeX",
-    "text": "1.5 Installing LaTeX\nYou can install the LaTeX typesetting system to produce PDF reports from RStudio. Without this additional installation, you will be able to produce reports in HTML but not PDF. To generate PDF reports, you will additionally need to install tinytex(R-tinytex?) and run the following code:\n\n# run this in the console\ninstall.packages(\"tinytex\")\ntinytex::install_tinytex()"
+    "text": "1.5 Installing LaTeX\nYou can install the LaTeX typesetting system to produce PDF reports from RStudio. Without this additional installation, you will be able to produce reports in HTML but not PDF. To generate PDF reports, you will additionally need to install tinytex(R-tinytex?) and run the following code:\n\n# run this in the console\ninstall.packages(\"tinytex\")\ntinytex::install_tinytex()\n\n\n\n\nRStudio General and Appearance settings\nRStudio Code settings",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Installing R/RStudio for Windows</span>"
+    ]
   },
   {
     "objectID": "installing-r-mac.html#installing-base-r",
     "href": "installing-r-mac.html#installing-base-r",
     "title": "2  Installing R/RStudio for Mac",
-    "section": "\n2.1 Installing Base R",
-    "text": "2.1 Installing Base R\nInstall base R. Choose the download link for your operating system (Linux, Mac OS X, or Windows).\nIf you have a Mac, install the latest release from the newest R-x.x.x.pkg link (or a legacy version if you have an older operating system). You may also need to install XQuartz to be able to use some visualisation packages.\nIf you are installing the Windows version, choose the “base” subdirectory and click on the download link at the top of the page.\nIf you are using Linux, choose your specific operating system and follow the installation instructions.\n\n\n\n\n\n\nInstallation Location\n\n\n\nIt can often cause problems to install R on a network or cloud drive, such as OneDrive or DropBox. It’s better to install these programs on your computer’s drive. Depending on your computer’s settings, you may have to get IT support to give you access to installing programs.\nIt can also cause rare, but hard-to-debug problems if any of the folders in the path where you install R have non-Latin characters, including Chinese characters or Latin characters with accents (e.g., C:\\\\Daniël\\Programs\\)."
+    "section": "",
+    "text": "Installation Location\n\n\n\nIt can often cause problems to install R on a network or cloud drive, such as OneDrive or DropBox. It’s better to install these programs on your computer’s drive. Depending on your computer’s settings, you may have to get IT support to give you access to installing programs.\nIt can also cause rare, but hard-to-debug problems if any of the folders in the path where you install R have non-Latin characters, including Chinese characters or Latin characters with accents (e.g., C:\\\\Daniël\\Programs\\).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing R/RStudio for Mac</span>"
+    ]
   },
   {
     "objectID": "installing-r-mac.html#installing-rstudio",
     "href": "installing-r-mac.html#installing-rstudio",
     "title": "2  Installing R/RStudio for Mac",
     "section": "\n2.2 Installing RStudio",
-    "text": "2.2 Installing RStudio\nGo to rstudio.com and download the RStudio Desktop (Open Source License) version for your operating system under the list titled Installers for Supported Platforms."
+    "text": "2.2 Installing RStudio\nGo to rstudio.com and download the RStudio Desktop (Open Source License) version for your operating system under the list titled Installers for Supported Platforms.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing R/RStudio for Mac</span>"
+    ]
   },
   {
     "objectID": "installing-r-mac.html#installing-rtools",
     "href": "installing-r-mac.html#installing-rtools",
     "title": "2  Installing R/RStudio for Mac",
     "section": "\n2.3 Installing RTools",
-    "text": "2.3 Installing RTools\nIf you are using Windows, after you install R, you should also install RTools; use the “recommended” version highlighted near the top of the list. RTools is used for installing and loading some packages. You can get started without installing RTools, but if you’re having problems with installing and loading some packages, this should be the first thing you try.\nRTools will require you to put it “on the PATH”. The instructions for this can seem a bit vague - the easiest way to do it is to open RStudio, run the below code in the console:\n\nwrite('PATH=\"${RTOOLS40_HOME}\\\\usr\\\\bin;${PATH}\"', file = \"~/.Renviron\", append = TRUE)\n\nOnce you’ve done that, restart R by clicking Session - Restart R and then run the below code in the console which should give you the path to your RTools installation:\n\nSys.which(\"make\")\n\n           make \n\"/usr/bin/make\""
+    "text": "2.3 Installing RTools\nIf you are using Windows, after you install R, you should also install RTools; use the “recommended” version highlighted near the top of the list. RTools is used for installing and loading some packages. You can get started without installing RTools, but if you’re having problems with installing and loading some packages, this should be the first thing you try.\nRTools will require you to put it “on the PATH”. The instructions for this can seem a bit vague - the easiest way to do it is to open RStudio, run the below code in the console:\n\nwrite('PATH=\"${RTOOLS40_HOME}\\\\usr\\\\bin;${PATH}\"', file = \"~/.Renviron\", append = TRUE)\n\nOnce you’ve done that, restart R by clicking Session - Restart R and then run the below code in the console which should give you the path to your RTools installation:\n\nSys.which(\"make\")\n\n           make \n\"/usr/bin/make\"",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing R/RStudio for Mac</span>"
+    ]
   },
   {
     "objectID": "installing-r-mac.html#sec-rstudio-settings",
     "href": "installing-r-mac.html#sec-rstudio-settings",
     "title": "2  Installing R/RStudio for Mac",
     "section": "\n2.4 RStudio Settings",
-    "text": "2.4 RStudio Settings\nThere are a few settings you should fix immediately after updating RStudio. Go to Tools &gt; Global Options… (⌘,), and in the General tab, uncheck the box that says Restore .RData into workspace at startup. If you keep things around in your workspace, things will get messy, and unexpected things will happen. You should always start with a clear workspace. This also means that you never want to save your workspace when you exit, so set this to Never. The only thing you want to save are your scripts.\nYou may also want to change the appearance of your code. Different fonts and themes can sometimes help with visual difficulties or dyslexia.\n\n\n\n\nRStudio General and Appearance settings\n\n\n\nYou may also want to change the settings in the Code tab. For example, Lisa prefers two spaces instead of tabs for my code and likes to be able to see the whitespace characters. But these are all a matter of personal preference.\n\n\n\n\nRStudio Code settings"
+    "text": "2.4 RStudio Settings\nThere are a few settings you should fix immediately after updating RStudio. Go to Tools &gt; Global Options… (⌘,), and in the General tab, uncheck the box that says Restore .RData into workspace at startup. If you keep things around in your workspace, things will get messy, and unexpected things will happen. You should always start with a clear workspace. This also means that you never want to save your workspace when you exit, so set this to Never. The only thing you want to save are your scripts.\nYou may also want to change the appearance of your code. Different fonts and themes can sometimes help with visual difficulties or dyslexia.\n\n\n\n\n\n\n\nRStudio General and Appearance settings\n\n\n\nYou may also want to change the settings in the Code tab. For example, Lisa prefers two spaces instead of tabs for my code and likes to be able to see the whitespace characters. But these are all a matter of personal preference.\n\n\n\n\n\n\n\nRStudio Code settings",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing R/RStudio for Mac</span>"
+    ]
   },
   {
     "objectID": "installing-r-mac.html#installing-latex",
     "href": "installing-r-mac.html#installing-latex",
     "title": "2  Installing R/RStudio for Mac",
     "section": "\n2.5 Installing LaTeX",
-    "text": "2.5 Installing LaTeX\nYou can install the LaTeX typesetting system to produce PDF reports from RStudio. Without this additional installation, you will be able to produce reports in HTML but not PDF. To generate PDF reports, you will additionally need to install tinytex(R-tinytex?) and run the following code:\n\n# run this in the console\ninstall.packages(\"tinytex\")\ntinytex::install_tinytex()"
+    "text": "2.5 Installing LaTeX\nYou can install the LaTeX typesetting system to produce PDF reports from RStudio. Without this additional installation, you will be able to produce reports in HTML but not PDF. To generate PDF reports, you will additionally need to install tinytex(R-tinytex?) and run the following code:\n\n# run this in the console\ninstall.packages(\"tinytex\")\ntinytex::install_tinytex()\n\n\n\n\nRStudio General and Appearance settings\nRStudio Code settings",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing R/RStudio for Mac</span>"
+    ]
   },
   {
     "objectID": "installing-r-library.html",
     "href": "installing-r-library.html",
     "title": "3  Using R/RStudio on a University Computer",
     "section": "",
-    "text": "Screenshots / instructions of using R on a library computer."
+    "text": "3.1 Opening RStudio on a university computer\nIf you cannot install R/RStudio on your own computer, you can always use one of the computers in the psychology labs or library. They all have R/RStudio installed, as well as all the packages you need for the course materials.\nFirst, log into the computer using your GUID and password. You should now be on the main desktop page (Figure 3.1).\nFigure 3.1: Your desktop on a university computer.\nIn the Windows menu, scroll down until you see a folder for RStudio. If you open the folder, you will see the RStudio software as a blue circle icon with an R in the middle (Figure 3.2).\nFigure 3.2: The RStudio software icon within the RStudio menu folder.\nWhen RStudio opens, you should see the three main windows with the default white theme (Figure 3.3). You now have RStudio open and ready to use in line with your course materials.\nFigure 3.3: Default RStudio application with a white background theme.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Using R/RStudio on a University Computer</span>"
+    ]
+  },
+  {
+    "objectID": "installing-r-windows.html",
+    "href": "installing-r-windows.html",
+    "title": "1  Installing R/RStudio for Windows",
+    "section": "",
+    "text": "1.1 Installing Base R\nInstall base R. Choose the download link for your operating system (Linux, Mac OS X, or Windows).\nIf you have a Mac, install the latest release from the newest R-x.x.x.pkg link (or a legacy version if you have an older operating system). You may also need to install XQuartz to be able to use some visualisation packages.\nIf you are installing the Windows version, choose the “base” subdirectory and click on the download link at the top of the page.\nIf you are using Linux, choose your specific operating system and follow the installation instructions.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Installing R/RStudio for Windows</span>"
+    ]
+  },
+  {
+    "objectID": "installing-r-mac.html",
+    "href": "installing-r-mac.html",
+    "title": "2  Installing R/RStudio for Mac",
+    "section": "",
+    "text": "2.1 Installing Base R\nInstall base R. Choose the download link for your operating system (Linux, Mac OS X, or Windows).\nIf you have a Mac, install the latest release from the newest R-x.x.x.pkg link (or a legacy version if you have an older operating system). You may also need to install XQuartz to be able to use some visualisation packages.\nIf you are installing the Windows version, choose the “base” subdirectory and click on the download link at the top of the page.\nIf you are using Linux, choose your specific operating system and follow the installation instructions.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing R/RStudio for Mac</span>"
+    ]
+  },
+  {
+    "objectID": "updating-r.html",
+    "href": "updating-r.html",
+    "title": "4  Updating R, RStudio, and packages",
+    "section": "",
+    "text": "4.1 Updating RStudio\nRStudio is the easiest component to update. Typically, updates to RStudio won’t affect your code, instead they add in new features, like spell-check or upgrades to what RStudio can do. There’s usually very little downside to updating RStudio and it’s easy to do.\nClick Help &gt; Check for updates\nUpdating RStudio\nIf an update is available, it will prompt you to download it and you can install it as usual.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Updating R, RStudio, and packages</span>"
+    ]
+  },
+  {
+    "objectID": "installing-r-library.html#opening-rstudio-on-a-university-computer",
+    "href": "installing-r-library.html#opening-rstudio-on-a-university-computer",
+    "title": "3  Using R/RStudio on a University Computer",
+    "section": "",
+    "text": "Warning\n\n\n\nRemember when you download and save files on a university computer, they are local to that computer. Make sure you save your work to the Cloud using OneDrive to access your files across devices.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Using R/RStudio on a University Computer</span>"
+    ]
+  },
+  {
+    "objectID": "installing-r-library.html#packages-on-a-university-computer",
+    "href": "installing-r-library.html#packages-on-a-university-computer",
+    "title": "3  Using R/RStudio on a University Computer",
+    "section": "\n3.2 Packages on a university computer",
+    "text": "3.2 Packages on a university computer\nYou will see several warnings in your course materials about not installing R packages on the university computers. This is because they already have a large number of packages already installed. In the packages window (Figure 3.4), these are all the packages installed on the system library, meaning everyone can access them. If you install a package, it will be installed on your user library. There might be a clash between two versions of the same package and it might not work.\nSo, please do not install R packages on a university computer.\n\n\n\n\n\n\n\nFigure 3.4: Hightlighted packages window to show the packages in your system library.\n\n\n\n\nPlease speak to your course lead if you think there is a problem accessing a package on a university computer that you have been instructed to use.\n\n\n\nFigure 3.1: Your desktop on a university computer.\nFigure 3.2: The RStudio software icon within the RStudio menu folder.\nFigure 3.3: Default RStudio application with a white background theme.\nFigure 3.4: Hightlighted packages window to show the packages in your system library.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Using R/RStudio on a University Computer</span>"
+    ]
   }
 ]

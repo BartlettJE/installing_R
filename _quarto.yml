@@ -5,6 +5,7 @@ project:
   resources: resources
 execute:
   freeze: auto
+lightbox: true
 book:
   title: Installing R/RStudio Guide
   subtitle: ''
@@ -17,7 +18,6 @@ book:
     name:
       family: Mahrholz
       given: Gaby
-    roles: ~
   doi: ''
   license: CC-BY
   description: This guide provides instructions for installing R/RStudio for students at the University of Glasgow.

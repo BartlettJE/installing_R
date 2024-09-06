@@ -1,6 +1,6 @@
 # Overview {.unnumbered}
 
-In this guide, we demonstrate how to download and install the software R/RStudio on your computer which you will use throughout your degree. If you cannot download R/RStudio to your own computer, there is also a chapter guiding you through using the software on the library/lab computers. 
+In this R(eady)SetGo guide, we demonstrate how to download and install the software R/RStudio on your computer which you will use throughout your degree. If you cannot download R/RStudio to your own computer, there is also a chapter guiding you through using the software on the library/lab computers. 
 
 See @sec-installing-r-windows if you have a Windows computer. 
 

@@ -1,3 +1,60 @@
 # Using R/RStudio on a University Computer {#sec-library-computer}
 
-Screenshots / instructions of using R on a library computer. 
+## Opening RStudio on a university computer
+
+If you cannot install R/RStudio on your own computer, you can always use one of the computers in the psychology labs or library. They all have R/RStudio installed, as well as all the packages you need for the course materials. 
+
+First, log into the computer using your GUID and password. You should now be on the main desktop page (@fig-img-desktop). 
+
+```{r img-desktop, echo=FALSE}
+#| label: fig-img-desktop
+#| fig.cap: "Your desktop on a university computer."
+#| fig.alt: "Default Windows desktop with a dark blue background. In the middle is the University of Glasgow logo." 
+
+knitr::include_graphics("images/Desktop.PNG")
+
+```
+
+In the Windows menu, scroll down until you see a folder for RStudio. If you open the folder, you will see the RStudio software as a blue circle icon with an R in the middle (@fig-img-desktop-RStudio).
+
+```{r img-desktop-RStudio, echo=FALSE}
+#| label: fig-img-desktop-RStudio
+#| fig.cap: "The RStudio software icon within the RStudio menu folder."
+#| fig.alt: "Zoomed in view of the Windows menu icon. On the left, there is a list of software in the menu. The RStudio folder is open and the RStudio icon is highlighted." 
+
+knitr::include_graphics("images/RStudio_desktop.PNG")
+
+```
+
+
+When RStudio opens, you should see the three main windows with the default white theme (@fig-img-RStudio). You now have RStudio open and ready to use in line with your course materials. 
+
+```{r img-RStudio, echo=FALSE}
+#| label: fig-img-RStudio
+#| fig.cap: "Default RStudio application with a white background theme."
+#| fig.alt: "The whole page is the default RStudio theme in white. There are three windows for the console, environment, and files." 
+
+knitr::include_graphics("images/Open_RStudio.PNG")
+
+```
+
+::: {.callout-warning}
+Remember when you download and save files on a university computer, they are local to that computer. Make sure you save your work to the Cloud using OneDrive to access your files across devices.  
+:::
+
+## Packages on a university computer
+
+You will see several warnings in your course materials about **not** installing R packages on the university computers. This is because they already have a large number of packages already installed. In the packages window (@fig-img-library-packages), these are all the packages installed on the **system** library, meaning everyone can access them. If you install a package, it will be installed on your **user** library. There might be a clash between two versions of the same package and it might not work. 
+
+So, please **do not** install R packages on a university computer. 
+
+```{r img-library-packages, echo=FALSE}
+#| label: fig-img-library-packages
+#| fig.cap: "Hightlighted packages window to show the packages in your system library."
+#| fig.alt: "Zoomed in view of the packages window. This shows all the packages in the system library and this section is highlighted with a red rectangle for emphasis." 
+
+knitr::include_graphics("images/Available_packages.PNG")
+
+```
+
+Please speak to your course lead if you think there is a problem accessing a package on a university computer that you have been instructed to use. 

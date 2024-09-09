@@ -1,69 +1,171 @@
 # Installing R/RStudio for Mac {#sec-installing-r-mac}
 
-Installing R and RStudio is usually straightforward. The sections below explain how and [there is a helpful YouTube video here](https://www.youtube.com/watch?v=lVKMsaWju8w){target="_blank"}.
+Installing R and RStudio is usually straightforward if you follow these steps. The sections below explain how to install R and R Studio on a Mac. If you prefer to watch a video showing the steps, [there is a helpful YouTube video here](https://youtu.be/I5WIMX4LK8M?si=s1ZTwKx0K2HoWAws){target="_blank"} which covers installing on a Mac. 
 
-## Installing Base R
+## RStudio desktop download page
 
-[Install base R](https://cran.rstudio.com/){target="_blank"}. Choose the download link for your operating system (Linux, Mac OS X, or Windows).
+Go to the [RStudio desktop download page here](https://posit.co/download/rstudio-desktop/){target="_blank"} which you can see in @fig-img-posit-install. This is hosted by Posit - the company who create and maintain RStudio as an Integrated Development Environment (IDE).
 
-If you have a Mac, install the latest release from the newest `R-x.x.x.pkg` link (or a legacy version if you have an older operating system). You may also need to install [XQuartz](http://xquartz.macosforge.org/){target="_blank"} to be able to use some visualisation packages.
+```{r img-posit-install, echo=FALSE}
+#| label: fig-img-posit-install
+#| fig.cap: "Install R and Install RStudio page on posit.co."
+#| fig.alt: "White background posit.co website for helping people install RStudio. On the left is a blue download and install R button. On the right is a blue download RStudio desktop for MACOS 12+ button."
 
-If you are installing the Windows version, choose the "[base](https://cran.rstudio.com/bin/windows/base/)" subdirectory and click on the download link at the top of the page. 
+knitr::include_graphics("images/posit_install_page.png")
 
-If you are using Linux, choose your specific operating system and follow the installation instructions.
+```
 
-::: {.callout-caution}
-## Installation Location
+They point you to two places to 1) install R and 2) install RStudio. 
 
-It can often cause problems to install R on a network or cloud drive, such as OneDrive or DropBox. It's better to install these programs on your computer's drive. Depending on your computer's settings, you may have to get IT support to give you access to installing programs. 
+## Step 1 - Install base R
 
-It can also cause rare, but hard-to-debug problems if any of the folders in the `r glossary("path")` where you install R have non-Latin characters, including Chinese characters or Latin characters with accents (e.g., `C:\\Daniël\Programs\`).
+The first step is installing base R. This is the software which contains all the functions and code you will use, but it is not very user friendly on it's own. We must first install R before we install RStudio. 
+
+If you click <if>Download and Install R</if>, it will take you to the download page for R (@fig-img-R-CRAN-1).
+
+```{r img-R-CRAN-1, echo=FALSE}
+#| label: fig-img-R-CRAN-1
+#| fig.cap: "Home page for the R CRAN site."
+#| fig.alt: "The CRAN site has a white background with a blue R logo in the top left corner. In the middle of the screen is a list of download options for different operating systems."
+
+knitr::include_graphics("images/R_CRAN_1.png")
+
+```
+
+You should click <if>Download R for macOS</if> and it will take you the download page (@fig-img-R-CRAN-2). Highlighted in the black square, the top of the page will show the latest versions. If you have a new Mac with a silicon chip (if you are unsure <if>click the Apple logo in the top left > About this Mac > Chip</if>), click the top link to download the installation file. If you have an older Mac but latest operating system (OS), click the second link to download the installation file. 
+
+If you have an older Mac which does not support the latest version of R, you can scroll down the page to see different versions supporting older OSs, but please check with your course lead if you can only download an older version of R to check it is still suitable. 
+
+```{r img-R-CRAN-2, echo=FALSE}
+#| label: fig-img-R-CRAN-2
+#| fig.cap: "R for MACOS download page on CRAN."
+#| fig.alt: "The CRAN site has a white background with a blue R logo in the top left corner. In the middle of the screen is a list of download options for different Mac versions. The top download link will be the most recent version of R for the newest Mac OS."
+
+knitr::include_graphics("images/R_CRAN_2.png")
+
+```
+
+Once you have downloaded the file, clicking on it should open the installation process. Click <if>Continue</if> on the first page (@fig-img-install-R-1).  
+
+```{r img-install-R-1, echo=FALSE}
+#| label: fig-img-install-R-1
+#| fig.cap: "The first R installation window for Mac OS: Introduction."
+#| fig.alt: "The first R installation window as a black and dark grey square. This page is for the introduction for what the installation includes."
+
+knitr::include_graphics("images/install_R_1.png")
+
+```
+
+The next page (@fig-img-install-R-2) - Read Me - explains what R is installing on your computer. Click <if>Continue</if>.  
+
+```{r img-install-R-2, echo=FALSE}
+#| label: fig-img-install-R-2
+#| fig.cap: "The second R installation window for Mac OS: Read Me."
+#| fig.alt: "The second R installation window as a black and dark grey square. This page is for the read me which explains what the installation file includes and any computer requirements."
+
+knitr::include_graphics("images/install_R_2.png")
+
+```
+
+The License (@fig-img-install-R-3) page explains the license R is covered under. Click <if>Continue</if>.  
+
+```{r img-install-R-3, echo=FALSE}
+#| label: fig-img-install-R-3
+#| fig.cap: "The third R installation window for Mac OS: License."
+#| fig.alt: "The third R installation window as a black and dark grey square. This page explains the license which R is released under."
+
+knitr::include_graphics("images/install_R_3.png")
+
+```
+
+After clicking <if>Continue</if> on the License page, it will ask you to agree to the licence (@fig-img-install-R-4). Click <if>Agree</if>.  
+
+```{r img-install-R-4, echo=FALSE}
+#| label: fig-img-install-R-4
+#| fig.cap: "Agreeing to the R user license."
+#| fig.alt: "The license window pops out as another black and dark grey square. You can agree or disagree to the license terms."
+
+knitr::include_graphics("images/install_R_4.png")
+
+```
+
+::: {.callout-warning}
+## Installation location and path
+
+On a Mac, it should automatically choose a location to install R and skip Destination Select, but if you do get the option it can often cause problems to install R on a network or cloud drive, such as OneDrive or DropBox. It is better to install these programs on your computer's drive. Depending on your computer's settings, you may have to get IT support to give you access to installing programs if you are using a work computer with restrictions. 
+
 :::
 
-## Installing RStudio
+The Installation Type (@fig-img-install-R-5) page explains how much memory the R install takes up on your computer. Click <if>Install</if>. 
 
-Go to [rstudio.com](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"} and download the RStudio Desktop (Open Source License) version for your operating system under the list titled **Installers for Supported Platforms**.
+```{r img-install-R-5, echo=FALSE}
+#| label: fig-img-install-R-5
+#| fig.cap: "The fourth R installation window for Mac OS: Installation Type."
+#| fig.alt: "The fourth R installation window as a black and dark grey square. This page explains the memory R takes up on your computer. Here: 117.6 MB."
 
-## Installing RTools
+knitr::include_graphics("images/install_R_5.png")
 
-If you are using Windows, after you install R, you should also install [RTools](https://cran.rstudio.com/bin/windows/Rtools/){target="_blank"}; use the "recommended" version highlighted near the top of the list. RTools is used for installing and loading some packages. You can get started without installing RTools, but if you're having problems with installing and loading some packages, this should be the first thing you try.
-
-RTools will require you to put it "on the PATH". The instructions for this can seem a bit vague - the easiest way to do it is to open RStudio, run the below code in the console:
-
-```{r eval  = FALSE}
-write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append = TRUE)
 ```
 
-Once you've done that, restart R by clicking `Session - Restart R` and then run the below code in the console which should give you the path to your RTools installation:
+Depending on your computer, it will take a few seconds to a few minutes, and show as installation successful (@fig-img-install-R-6). Click <if>Close</if>. 
 
-```{r}
-Sys.which("make")
+```{r img-install-R-6, echo=FALSE}
+#| label: fig-img-install-R-6
+#| fig.cap: "The fifth R installation window for Mac OS: Summary."
+#| fig.alt: "The fifth and final R installation window as a black and dark grey square. There is a large green tick if the installation is successful."
+
+knitr::include_graphics("images/install_R_6.png")
+
 ```
 
+After you click <if>Close</if>, it should offer to send the installation file to the bin now it has finished installing (@fig-img-install-R-7). Click <if>Move to Bin</if>. 
 
-## RStudio Settings {#sec-rstudio-settings}
+```{r img-install-R-7, echo=FALSE}
+#| label: fig-img-install-R-7
+#| fig.cap: "Moving the R installation file to the bin."
+#| fig.alt: "After closing the R installation file, you see a small pop-out in dark grey. It asks you to keep the file or move it to the bin."
 
-There are a few settings you should fix immediately after updating RStudio. Go to <if>Tools > Global Options...</if> (<mac>&#8984;,</mac>), and in the General tab, uncheck the box that says <if>Restore .RData into workspace at startup</if>.  If you keep things around in your workspace, things will get messy, and unexpected things will happen. You should always start with a clear workspace. This also means that you never want to save your workspace when you exit, so set this to <if>Never</if>. The only thing you want to save are your scripts.
+knitr::include_graphics("images/install_R_7.png")
 
-You may also want to change the appearance of your code. Different fonts and themes can sometimes help with visual difficulties or [dyslexia](https://datacarpentry.org/blog/2017/09/coding-and-dyslexia){target="_blank"}. 
-
-```{r settings-general, eval = TRUE, echo=FALSE, fig.cap = "RStudio General and Appearance settings"}
-knitr::include_graphics('images/rstudio_settings_general_appearance.png')
 ```
 
-You may also want to change the settings in the Code tab. For example, Lisa prefers two spaces instead of tabs for my code and likes to be able to see the `r glossary("whitespace")` characters. But these are all a matter of personal preference.
+If you followed all of these steps, then you should have R successfully installed on your computer. You do not need to open it as we never actually use R on it's own, but you need it installed before we download and install RStudio.
 
-```{r settings-code, eval = TRUE, echo=FALSE, fig.cap = 'RStudio Code settings'}
-knitr::include_graphics("images/rstudio_settings_code.png")
+## Step 2 - Install RStudio
+
+If you closed the page down, go back to the [RStudio desktop download page here](https://posit.co/download/rstudio-desktop/){target="_blank"} which you can see in @fig-img-posit-install.
+
+This page should recognise what your OS is and the blue button will be customised to your OS. So, for a Mac user, it should prompt you to download RStudio for a MAC OS. Clicking this link will start downloading the file to your downloads folder. 
+
+If you have an older Mac and you cannot download the latest version of RStudio, click on the <if>download a previous version</if> link. You will see a list of previous versions under the RStudio IDE / Workbench heading. 
+
+Once the download has finished (depending on your computer and WiFi a few minutes to around 15 minutes), it will open in a folder (@fig-img-install-RStudio). If you drag the white and blue RStudio logo into your Applications, you will be able to access it from your Applications folder. 
+
+```{r img-install-RStudio, echo=FALSE}
+#| label: fig-img-install-RStudio
+#| fig.cap: "Dragging the RStudio installation file to the applications."
+#| fig.alt: "After downloading the RStudio installation file, the white and blue RStudio file will open in a folder. Next to it, you can drag the file to the blue Applications folder."
+
+knitr::include_graphics("images/RStudio_install.png")
+
 ```
 
+When you open it for the first time, we recommend pinning it to your Dock (<if> control key and click > Options > Keep in Dock</if>) so you always know where to find it. 
 
-## Installing LaTeX
+If you have successfully installed R and RStudio, you should see a fresh RStudio window (@fig-img-RStudio-fresh) when you open it from Applications or your Dock. 
 
-You can install the LaTeX typesetting system to produce PDF reports from RStudio. Without this additional installation, you will be able to produce reports in HTML but not PDF. To generate PDF reports, you will additionally need to install <pkg>tinytex</pkg> [@R-tinytex] and run the following code:
+```{r img-RStudio-fresh, echo=FALSE}
+#| label: fig-img-RStudio-fresh
+#| fig.cap: "Default white theme RStudio window."
+#| fig.alt: "If the installation is successful, you can open RStudio as a piece of software on your computer. With default settings, it will open as a white background with three main windows: Console, Environment, and Files. "
 
-```{r eval=FALSE}
-# run this in the console
-install.packages("tinytex")
-tinytex::install_tinytex()
+knitr::include_graphics("images/Fresh_RStudio.png")
+
 ```
+
+You are now ready to start working with R/RStudio from your course materials! 
+
+## Getting help for installation problems
+
+If you have any problems with installing R and R Studio on your computer, please attend the graduate teaching assistant support sessions for your course, speak to your course lead, or post on the Teams channel for your course/programme. 
+

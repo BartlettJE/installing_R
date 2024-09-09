@@ -10,4 +10,6 @@ See @sec-library-computer if you need to use the library/lab computers.
 
 Every now and again, you need to update R/RStudio or the packages you use, so there is @sec-updating-r to support you there. 
 
+If you want to knit R Markdown files to PDF, you will need to install an extra package, so see @sec-install-tinytex. 
+
 

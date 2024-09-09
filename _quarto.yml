@@ -50,6 +50,7 @@ book:
   - installing-r-mac.qmd
   - installing-r-library.qmd
   - updating-r.qmd
+  - install-tidytex.qmd
 bibliography: include/references.bib
 csl: include/apa.csl
 format:

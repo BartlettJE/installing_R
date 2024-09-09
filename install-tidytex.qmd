@@ -1,0 +1,17 @@
+# Installing TinyTeX to knit PDF files {#sec-install-tinytex}
+
+## Knitting to PDF
+
+For most of our courses, we encourage you to knit R Markdown files to html or Word files. However, there is also an option to knit to PDF files. By default, it will not work on your computer unless you have software on your computer to compile a PDF file. 
+
+To generate PDF reports, the easiest way is installing [<pkg>tinytex</pkg>](https://yihui.org/tinytex/){target="_blank"} and running the following code to install a lightweight LaTeX compiler:
+
+```{r eval=FALSE}
+# run this in the console
+install.packages("tinytex")
+tinytex::install_tinytex()
+```
+
+::: {.callout-warning}
+On university computers, this is already installed and you should be able to knit to PDF. Please remember **not** to install packages on the university computers or online server as it can cause clashes between your user and system libraries. 
+:::

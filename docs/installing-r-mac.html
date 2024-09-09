@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.3.450">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="description" content="This guide provides instructions for installing R/RStudio for students at the University of Glasgow.">
 <title>Installing R/RStudio Guide - 2&nbsp; Installing R/RStudio for Mac</title>
@@ -17,40 +17,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -73,22 +39,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -97,7 +54,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -112,19 +68,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./installing-r-mac.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installing R/RStudio for Mac</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./installing-r-mac.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installing R/RStudio for Mac</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
   </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Installing R/RStudio Guide</a> 
         <div class="sidebar-tools-main">
@@ -169,19 +125,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Updating R, RStudio, and packages</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./install-tidytex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Installing LaTeX for knit PDF files</span></span></a>
+  </div>
+</li>
     </ul>
 </div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#installing-base-r" id="toc-installing-base-r" class="nav-link active" data-scroll-target="#installing-base-r"><span class="header-section-number">2.1</span> Installing Base R</a></li>
-  <li><a href="#installing-rstudio" id="toc-installing-rstudio" class="nav-link" data-scroll-target="#installing-rstudio"><span class="header-section-number">2.2</span> Installing RStudio</a></li>
-  <li><a href="#installing-rtools" id="toc-installing-rtools" class="nav-link" data-scroll-target="#installing-rtools"><span class="header-section-number">2.3</span> Installing RTools</a></li>
-  <li><a href="#sec-rstudio-settings" id="toc-sec-rstudio-settings" class="nav-link" data-scroll-target="#sec-rstudio-settings"><span class="header-section-number">2.4</span> RStudio Settings</a></li>
-  <li><a href="#installing-latex" id="toc-installing-latex" class="nav-link" data-scroll-target="#installing-latex"><span class="header-section-number">2.5</span> Installing LaTeX</a></li>
+<li><a href="#rstudio-desktop-download-page" id="toc-rstudio-desktop-download-page" class="nav-link active" data-scroll-target="#rstudio-desktop-download-page"><span class="header-section-number">2.1</span> RStudio desktop download page</a></li>
+  <li><a href="#step-1---install-base-r" id="toc-step-1---install-base-r" class="nav-link" data-scroll-target="#step-1---install-base-r"><span class="header-section-number">2.2</span> Step 1 - Install base R</a></li>
+  <li><a href="#step-2---install-rstudio" id="toc-step-2---install-rstudio" class="nav-link" data-scroll-target="#step-2---install-rstudio"><span class="header-section-number">2.3</span> Step 2 - Install RStudio</a></li>
+  <li><a href="#getting-help-for-installation-problems" id="toc-getting-help-for-installation-problems" class="nav-link" data-scroll-target="#getting-help-for-installation-problems"><span class="header-section-number">2.4</span> Getting help for installation problems</a></li>
   </ul></nav>
     </div>
 <!-- main -->
@@ -199,87 +160,148 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
-
-</header><p>Installing R and RStudio is usually straightforward. The sections below explain how and <a href="https://www.youtube.com/watch?v=lVKMsaWju8w" target="_blank">there is a helpful YouTube video here</a>.</p>
-<section id="installing-base-r" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="installing-base-r">
-<span class="header-section-number">2.1</span> Installing Base R</h2>
-<p><a href="https://cran.rstudio.com/" target="_blank">Install base R</a>. Choose the download link for your operating system (Linux, Mac OS X, or Windows).</p>
-<p>If you have a Mac, install the latest release from the newest <code>R-x.x.x.pkg</code> link (or a legacy version if you have an older operating system). You may also need to install <a href="http://xquartz.macosforge.org/" target="_blank">XQuartz</a> to be able to use some visualisation packages.</p>
-<p>If you are installing the Windows version, choose the “<a href="https://cran.rstudio.com/bin/windows/base/">base</a>” subdirectory and click on the download link at the top of the page.</p>
-<p>If you are using Linux, choose your specific operating system and follow the installation instructions.</p>
-<div class="callout callout-style-default callout-caution callout-titled">
+</header><p>Installing R and RStudio is usually straightforward if you follow these steps. The sections below explain how to install R and R Studio on a Mac. If you prefer to watch a video showing the steps, <a href="https://youtu.be/I5WIMX4LK8M?si=s1ZTwKx0K2HoWAws" target="_blank">there is a helpful YouTube video here</a> which covers installing on a Mac.</p>
+<section id="rstudio-desktop-download-page" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="rstudio-desktop-download-page">
+<span class="header-section-number">2.1</span> RStudio desktop download page</h2>
+<p>Go to the <a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio desktop download page here</a> which you can see in <a href="#fig-img-posit-install">Figure&nbsp;<span>2.1</span></a>. This is hosted by Posit - the company who create and maintain RStudio as an Integrated Development Environment (IDE).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-img-posit-install" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/posit_install_page.png" class="img-fluid figure-img" style="width:100.0%" alt="White background posit.co website for helping people install RStudio. On the left is a blue download and install R button. On the right is a blue download RStudio desktop for MACOS 12+ button."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.1: Install R and Install RStudio page on posit.co.</figcaption></figure>
+</div>
+</div>
+</div>
+<p>They point you to two places to 1) install R and 2) install RStudio.</p>
+</section><section id="step-1---install-base-r" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="step-1---install-base-r">
+<span class="header-section-number">2.2</span> Step 1 - Install base R</h2>
+<p>The first step is installing base R. This is the software which contains all the functions and code you will use, but it is not very user friendly on it’s own. We must first install R before we install RStudio.</p>
+<p>If you click <if>Download and Install R</if>, it will take you to the download page for R (<a href="#fig-img-R-CRAN-1">Figure&nbsp;<span>2.2</span></a>).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-img-R-CRAN-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/R_CRAN_1.png" class="img-fluid figure-img" style="width:100.0%" alt="The CRAN site has a white background with a blue R logo in the top left corner. In the middle of the screen is a list of download options for different operating systems."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.2: Home page for the R CRAN site.</figcaption></figure>
+</div>
+</div>
+</div>
+<p>You should click <if>Download R for macOS</if> and it will take you the download page (<a href="#fig-img-R-CRAN-2">Figure&nbsp;<span>2.3</span></a>). Highlighted in the black square, the top of the page will show the latest versions. If you have a new Mac with a silicon chip (if you are unsure <if>click the Apple logo in the top left &gt; About this Mac &gt; Chip</if>), click the top link to download the installation file. If you have an older Mac but latest operating system (OS), click the second link to download the installation file.</p>
+<p>If you have an older Mac which does not support the latest version of R, you can scroll down the page to see different versions supporting older OSs, but please check with your course lead if you can only download an older version of R to check it is still suitable.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-img-R-CRAN-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/R_CRAN_2.png" class="img-fluid figure-img" style="width:100.0%" alt="The CRAN site has a white background with a blue R logo in the top left corner. In the middle of the screen is a list of download options for different Mac versions. The top download link will be the most recent version of R for the newest Mac OS."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.3: R for MACOS download page on CRAN.</figcaption></figure>
+</div>
+</div>
+</div>
+<p>Once you have downloaded the file, clicking on it should open the installation process. Click <if>Continue</if> on the first page (<a href="#fig-img-install-R-1">Figure&nbsp;<span>2.4</span></a>).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-img-install-R-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/install_R_1.png" class="img-fluid figure-img" style="width:100.0%" alt="The first R installation window as a black and dark grey square. This page is for the introduction for what the installation includes."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.4: The first R installation window for Mac OS: Introduction.</figcaption></figure>
+</div>
+</div>
+</div>
+<p>The next page (<a href="#fig-img-install-R-2">Figure&nbsp;<span>2.5</span></a>) - Read Me - explains what R is installing on your computer. Click <if>Continue</if>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-img-install-R-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/install_R_2.png" class="img-fluid figure-img" style="width:100.0%" alt="The second R installation window as a black and dark grey square. This page is for the read me which explains what the installation file includes and any computer requirements."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.5: The second R installation window for Mac OS: Read Me.</figcaption></figure>
+</div>
+</div>
+</div>
+<p>The License (<a href="#fig-img-install-R-3">Figure&nbsp;<span>2.6</span></a>) page explains the license R is covered under. Click <if>Continue</if>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-img-install-R-3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/install_R_3.png" class="img-fluid figure-img" style="width:100.0%" alt="The third R installation window as a black and dark grey square. This page explains the license which R is released under."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.6: The third R installation window for Mac OS: License.</figcaption></figure>
+</div>
+</div>
+</div>
+<p>After clicking <if>Continue</if> on the License page, it will ask you to agree to the licence (<a href="#fig-img-install-R-4">Figure&nbsp;<span>2.7</span></a>). Click <if>Agree</if>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-img-install-R-4" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/install_R_4.png" class="img-fluid figure-img" style="width:100.0%" alt="The license window pops out as another black and dark grey square. You can agree or disagree to the license terms."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.7: Agreeing to the R user license.</figcaption></figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Installation Location
+Installation location and path
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>It can often cause problems to install R on a network or cloud drive, such as OneDrive or DropBox. It’s better to install these programs on your computer’s drive. Depending on your computer’s settings, you may have to get IT support to give you access to installing programs.</p>
-<p>It can also cause rare, but hard-to-debug problems if any of the folders in the <a class="glossary">path<span class="def"></span></a> where you install R have non-Latin characters, including Chinese characters or Latin characters with accents (e.g., <code>C:\\Daniël\Programs\</code>).</p>
+<p>On a Mac, it should automatically choose a location to install R and skip Destination Select, but if you do get the option it can often cause problems to install R on a network or cloud drive, such as OneDrive or DropBox. It is better to install these programs on your computer’s drive. Depending on your computer’s settings, you may have to get IT support to give you access to installing programs if you are using a work computer with restrictions.</p>
 </div>
 </div>
-</section><section id="installing-rstudio" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="installing-rstudio">
-<span class="header-section-number">2.2</span> Installing RStudio</h2>
-<p>Go to <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">rstudio.com</a> and download the RStudio Desktop (Open Source License) version for your operating system under the list titled <strong>Installers for Supported Platforms</strong>.</p>
-</section><section id="installing-rtools" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="installing-rtools">
-<span class="header-section-number">2.3</span> Installing RTools</h2>
-<p>If you are using Windows, after you install R, you should also install <a href="https://cran.rstudio.com/bin/windows/Rtools/" target="_blank">RTools</a>; use the “recommended” version highlighted near the top of the list. RTools is used for installing and loading some packages. You can get started without installing RTools, but if you’re having problems with installing and loading some packages, this should be the first thing you try.</p>
-<p>RTools will require you to put it “on the PATH”. The instructions for this can seem a bit vague - the easiest way to do it is to open RStudio, run the below code in the console:</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">write</span>(<span class="st">'PATH="${RTOOLS40_HOME}</span><span class="sc">\\</span><span class="st">usr</span><span class="sc">\\</span><span class="st">bin;${PATH}"'</span>, <span class="at">file =</span> <span class="st">"~/.Renviron"</span>, <span class="at">append =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Once you’ve done that, restart R by clicking <code>Session - Restart R</code> and then run the below code in the console which should give you the path to your RTools installation:</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">Sys.which</span>(<span class="st">"make"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>           make 
-"/usr/bin/make" </code></pre>
-</div>
-</div>
-</section><section id="sec-rstudio-settings" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="sec-rstudio-settings">
-<span class="header-section-number">2.4</span> RStudio Settings</h2>
-<p>There are a few settings you should fix immediately after updating RStudio. Go to <if>Tools &gt; Global Options…</if> (<mac>⌘,</mac>), and in the General tab, uncheck the box that says <if>Restore .RData into workspace at startup</if>. If you keep things around in your workspace, things will get messy, and unexpected things will happen. You should always start with a clear workspace. This also means that you never want to save your workspace when you exit, so set this to <if>Never</if>. The only thing you want to save are your scripts.</p>
-<p>You may also want to change the appearance of your code. Different fonts and themes can sometimes help with visual difficulties or <a href="https://datacarpentry.org/blog/2017/09/coding-and-dyslexia" target="_blank">dyslexia</a>.</p>
+<p>The Installation Type (<a href="#fig-img-install-R-5">Figure&nbsp;<span>2.8</span></a>) page explains how much memory the R install takes up on your computer. Click <if>Install</if>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="images/rstudio_settings_general_appearance.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="RStudio General and Appearance settings"><img src="images/rstudio_settings_general_appearance.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="RStudio General and Appearance settings"></a></p>
-</figure>
-</div>
-<figcaption>RStudio General and Appearance settings</figcaption></figure>
+<div id="fig-img-install-R-5" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/install_R_5.png" class="img-fluid figure-img" style="width:100.0%" alt="The fourth R installation window as a black and dark grey square. This page explains the memory R takes up on your computer. Here: 117.6 MB."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.8: The fourth R installation window for Mac OS: Installation Type.</figcaption></figure>
 </div>
 </div>
 </div>
-<p>You may also want to change the settings in the Code tab. For example, Lisa prefers two spaces instead of tabs for my code and likes to be able to see the <a class="glossary">whitespace<span class="def"></span></a> characters. But these are all a matter of personal preference.</p>
+<p>Depending on your computer, it will take a few seconds to a few minutes, and show as installation successful (<a href="#fig-img-install-R-6">Figure&nbsp;<span>2.9</span></a>). Click <if>Close</if>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="images/rstudio_settings_code.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="RStudio Code settings"><img src="images/rstudio_settings_code.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="RStudio Code settings"></a></p>
-</figure>
-</div>
-<figcaption>RStudio Code settings</figcaption></figure>
+<div id="fig-img-install-R-6" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/install_R_6.png" class="img-fluid figure-img" style="width:100.0%" alt="The fifth and final R installation window as a black and dark grey square. There is a large green tick if the installation is successful."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.9: The fifth R installation window for Mac OS: Summary.</figcaption></figure>
 </div>
 </div>
 </div>
-</section><section id="installing-latex" class="level2" data-number="2.5"><h2 data-number="2.5" class="anchored" data-anchor-id="installing-latex">
-<span class="header-section-number">2.5</span> Installing LaTeX</h2>
-<p>You can install the LaTeX typesetting system to produce PDF reports from RStudio. Without this additional installation, you will be able to produce reports in HTML but not PDF. To generate PDF reports, you will additionally need to install <pkg>tinytex</pkg><span class="citation" data-cites="R-tinytex">(<a href="#ref-R-tinytex" role="doc-biblioref"><strong>R-tinytex?</strong></a>)</span> and run the following code:</p>
+<p>After you click <if>Close</if>, it should offer to send the installation file to the bin now it has finished installing (<a href="#fig-img-install-R-7">Figure&nbsp;<span>2.10</span></a>). Click <if>Move to Bin</if>.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># run this in the console</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">install.packages</span>(<span class="st">"tinytex"</span>)</span>
-<span id="cb4-3"><a href="#cb4-3"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-img-install-R-7" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/install_R_7.png" class="img-fluid figure-img" style="width:100.0%" alt="After closing the R installation file, you see a small pop-out in dark grey. It asks you to keep the file or move it to the bin."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.10: Moving the R installation file to the bin.</figcaption></figure>
 </div>
+</div>
+</div>
+<p>If you followed all of these steps, then you should have R successfully installed on your computer. You do not need to open it as we never actually use R on it’s own, but you need it installed before we download and install RStudio.</p>
+</section><section id="step-2---install-rstudio" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="step-2---install-rstudio">
+<span class="header-section-number">2.3</span> Step 2 - Install RStudio</h2>
+<p>If you closed the page down, go back to the <a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio desktop download page here</a> which you can see in <a href="#fig-img-posit-install">Figure&nbsp;<span>2.1</span></a>.</p>
+<p>This page should recognise what your OS is and the blue button will be customised to your OS. So, for a Mac user, it should prompt you to download RStudio for a MAC OS. Clicking this link will start downloading the file to your downloads folder.</p>
+<p>If you have an older Mac and you cannot download the latest version of RStudio, click on the <if>download a previous version</if> link. You will see a list of previous versions under the RStudio IDE / Workbench heading.</p>
+<p>Once the download has finished (depending on your computer and WiFi a few minutes to around 15 minutes), it will open in a folder (<a href="#fig-img-install-RStudio">Figure&nbsp;<span>2.11</span></a>). If you drag the white and blue RStudio logo into your Applications, you will be able to access it from your Applications folder.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-img-install-RStudio" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/RStudio_install.png" class="img-fluid figure-img" style="width:100.0%" alt="After downloading the RStudio installation file, the white and blue RStudio file will open in a folder. Next to it, you can drag the file to the blue Applications folder."></p>
+<figcaption class="figure-caption">Figure&nbsp;2.11: Dragging the RStudio installation file to the applications.</figcaption></figure>
+</div>
+</div>
+</div>
+<p>When you open it for the first time, we recommend pinning it to your Dock (<if> control key and click &gt; Options &gt; Keep in Dock</if>) so you always know where to find it.</p>
+<p>If you have successfully installed R and RStudio, you should see a fresh RStudio window (<a href="#fig-img-RStudio-fresh">Figure&nbsp;<span>2.12</span></a>) when you open it from Applications or your Dock.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-img-RStudio-fresh" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="images/Fresh_RStudio.png" class="img-fluid figure-img" style="width:100.0%" alt="If the installation is successful, you can open RStudio as a piece of software on your computer. With default settings, it will open as a white background with three main windows: Console, Environment, and Files. "></p>
+<figcaption class="figure-caption">Figure&nbsp;2.12: Default white theme RStudio window.</figcaption></figure>
+</div>
+</div>
+</div>
+<p>You are now ready to start working with R/RStudio from your course materials!</p>
+</section><section id="getting-help-for-installation-problems" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="getting-help-for-installation-problems">
+<span class="header-section-number">2.4</span> Getting help for installation problems</h2>
+<p>If you have any problems with installing R and R Studio on your computer, please attend the graduate teaching assistant support sessions for your course, speak to your course lead, or post on the Teams channel for your course/programme.</p>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">RStudio General and Appearance settings</span>
-<span class="glightbox-desc lightbox-desc-2">RStudio Code settings</span>
-</div>
 </section></main><!-- /main --><script>
 
 /* update total correct if #webex-total_correct exists */
@@ -555,33 +577,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
   const toggleColorMode = (alternate) => {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
@@ -648,15 +643,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -735,27 +728,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -765,17 +741,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -787,130 +754,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -954,7 +798,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -980,32 +823,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1065,12 +882,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./installing-r-windows.html" class="pagination-link" aria-label="Installing R/RStudio for Windows">
+      <a href="./installing-r-windows.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Installing R/RStudio for Windows</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./installing-r-library.html" class="pagination-link" aria-label="Using R/RStudio on a University Computer">
+      <a href="./installing-r-library.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Using R/RStudio on a University Computer</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1080,38 +897,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">
-<p>CC-BY (2024) James Bartlett</p>
-</div>
+    <div class="nav-footer-center">CC-BY (2024) James Bartlett</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
-</footer><script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
+</footer>
 
 
 </body></html>

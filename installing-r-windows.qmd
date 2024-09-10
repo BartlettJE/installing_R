@@ -11,7 +11,7 @@ Go to the [RStudio desktop download page here](https://posit.co/download/rstudio
 #| fig.cap: "Install R and Install RStudio page on posit.co."
 #| fig.alt: "White background posit.co website for helping people install RStudio. On the left is a blue download and install R button. On the right is a blue download RStudio desktop for Windows button."
 
-knitr::include_graphics("images/posit_install_page.png")
+knitr::include_graphics("images/posit_install_page_windows.png")
 
 ```
 
@@ -32,27 +32,250 @@ knitr::include_graphics("images/R_CRAN_1.png")
 
 ```
 
-You should click <if>Download R for Windows</if> and it will take you the download page (FIG). Highlighted in the black square, the top of the page will show the latest versions.
+You should click <if>Download R for Windows</if> and it will take you the R for Windows page (@fig-img-R-CRAN-windows-2). Click <if>Base</if> for installing R the first time. 
 
-If you have an older computer which does not support the latest version of R, you can scroll down the page to see different versions supporting older operating systems, but please check with your course lead if you can only download an older version of R to check it is still suitable. 
+```{r img-R-CRAN-windows-2, echo=FALSE}
+#| label: fig-img-R-CRAN-windows-2
+#| fig.cap: "R for Windows on the CRAN site."
+#| fig.alt: "The CRAN site has a white background with a blue R logo in the top left corner. In the middle of the screen is a list of download options for Windows including base and Rtools."
+
+knitr::include_graphics("images/R_CRAN_2_windows.png")
+
+```
+
+This will take you to the Windows download page (@fig-img-R-CRAN-windows-3). Click <if>Download R for Windows</if> at the top of the page. This will be the latest version available to you and it will start downloading to your downloads folder. Double click on the file when it has finished downloading.  
+
+If you have an older computer which does not support the latest version of R, you can select a different version supporting older operating systems from the <if>Previous releases</if> link, but please check with your course lead if you can only download an older version of R to check it is still suitable. 
+
+```{r img-R-CRAN-windows-3, echo=FALSE}
+#| label: fig-img-R-CRAN-windows-3
+#| fig.cap: "R download page on CRAN."
+#| fig.alt: "The CRAN site has a white background with a blue R logo in the top left corner. At the top of the page is a blue download R-4.4.1 for windows link to start the download process."
+
+knitr::include_graphics("images/R_CRAN_3_windows.png")
+
+```
+
+Once you have double clicked the installation file, the first window (@fig-img-install-r-windows-1) will get you to confirm the setup language. Click <if>OK</if>. 
+
+```{r img-install-r-windows-1, echo=FALSE}
+#| label: fig-img-install-r-windows-1
+#| fig.cap: "R installation process: Select setup language."
+#| fig.alt: "The installation screen is a white and grey box. Here, the setup language menu is a drop-down with English as the default and a blue OK button."
+
+knitr::include_graphics("images/install_R_1_windows.png")
+
+```
+
+The information window (@fig-img-install-r-windows-2) will explain what it is installing the user license. Click <if>Next</if>. 
+
+```{r img-install-r-windows-2, echo=FALSE}
+#| label: fig-img-install-r-windows-2
+#| fig.cap: "R installation process: Information."
+#| fig.alt: "The installation screen is a white and grey box. Here, the information page lets you scroll through the license and explains what R installs."
+
+knitr::include_graphics("images/install_R_2_windows.png")
+
+```
+
+The destination location window (@fig-img-install-r-windows-3) will ask you to confirm where it should install R to. It is **important** this installs to your `C:` drive which should be the default. Click <if>Next</if>. 
+
+```{r img-install-r-windows-3, echo=FALSE}
+#| label: fig-img-install-r-windows-3
+#| fig.cap: "R installation process: Select destination location."
+#| fig.alt: "The installation screen is a white and grey box. Here, the select destination page lets you browse through your computer files to choose a folder to save R in. The default should be a C: drive."
+
+knitr::include_graphics("images/install_R_3_windows.png")
+
+```
 
 ::: {.callout-caution}
 ## Installation Location
 
-It can often cause problems to install R on a network or cloud drive, such as OneDrive or DropBox. It's better to install these programs on your computer's drive. Depending on your computer's settings, you may have to get IT support to give you access to installing programs. 
+It can often cause problems to install R on a network or cloud drive, such as OneDrive or DropBox. It's better to install these programs on your computer's drive (`C:`). Depending on your computer's settings, you may have to get IT support to give you access to installing programs. 
 
-It can also cause rare, but hard-to-debug problems if any of the folders in the `r glossary("path")` where you install R have non-Latin characters, including Chinese characters or Latin characters with accents (e.g., `C:\\Daniël\Programs\`).
+It can also cause rare, but hard-to-debug problems if any of the folders in the `r glossary("path")` where you install R have non-Latin characters, including Chinese characters or Latin characters with accents (e.g., `C:\\Daniël\Programs\`). Try and avoid these wherever possible.
 :::
+
+The select components window (@fig-img-install-r-windows-4) lets you select which components it should install, but leave these all ticked. Click <if>Next</if>. 
+
+```{r img-install-r-windows-4, echo=FALSE}
+#| label: fig-img-install-r-windows-4
+#| fig.cap: "R installation process: Select components."
+#| fig.alt: "The installation screen is a white and grey box. Here, select components page allows you to select what is installed. There should be three default boxes ticked for main files, 64-bit files, and message translations."
+
+knitr::include_graphics("images/install_R_4_windows.png")
+
+```
+
+The startup options window (@fig-img-install-r-windows-5) asks if you want to customise the startup options, but leave this as No for the default options. Click <if>Next</if>. 
+
+```{r img-install-r-windows-5, echo=FALSE}
+#| label: fig-img-install-r-windows-5
+#| fig.cap: "R installation process: Startup options."
+#| fig.alt: "The installation screen is a white and grey box. Here, startup options allows you to customise the options, but the default should be no."
+
+knitr::include_graphics("images/install_R_5_windows.png")
+
+```
+
+The select additional tasks window (@fig-img-install-r-windows-6) asks if you want to add any additional steps in the installation process, but leave these ticked/unticked as default. Click <if>Next</if> to start the installation process. 
+
+```{r img-install-r-windows-6, echo=FALSE}
+#| label: fig-img-install-r-windows-6
+#| fig.cap: "R installation process: Select additional tasks."
+#| fig.alt: "The installation screen is a white and grey box. Here, you can select shortcuts to create for R which should be unticked, and two registry entries which should be ticked."
+
+knitr::include_graphics("images/install_R_6_windows.png")
+
+```
+
+
+Depending on your computer, it will take a few seconds to a few minutes to successfull install R (@fig-img-install-r-windows-7). Click <if>Finish</if> to complete this part of the process. 
+
+```{r img-install-r-windows-7, echo=FALSE}
+#| label: fig-img-install-r-windows-7
+#| fig.cap: "Complete R installation process."
+#| fig.alt: "The complete installation process is a white box confirming you have completed the setup process."
+
+knitr::include_graphics("images/install_R_7_windows.png")
+
+```
+
+If you followed all of these steps, then you should have R successfully installed on your computer. You do not need to open it as we never actually use R on it's own, but you need it installed before we download and install RStudio.
 
 ## Step 2 - Installing RTools
 
-After you install R, you should also install [RTools](https://cran.rstudio.com/bin/windows/Rtools/){target="_blank"}; use the "recommended" version highlighted near the top of the list. RTools is used for installing and loading some packages. You can get started without installing RTools, but if you are having problems with installing and loading some packages, this should be the first thing you try.
+This is technically an optional step, but after you install R it is a good idea to install [RTools](https://cran.rstudio.com/bin/windows/Rtools/){target="_blank"}. You can get started without installing RTools, but if you are having problems with installing and loading some packages, this should be the first thing you try.
+
+If you go back to the R for Windows page (@fig-img-R-CRAN-windows-2). This time, click <if>RTools</if> and it will take you to the RTools download page (@fig-img-RTools-CRAN-1). Click the top <if>RTools</if> option for the latest release. If you had to install an older version of R in Step 1, select a version of RTools consistent with the version of R you installed. 
+
+```{r img-RTools-CRAN-1, echo=FALSE}
+#| label: fig-img-RTools-CRAN-1
+#| fig.cap: "RTools page on the R CRAN site."
+#| fig.alt: "The CRAN site has a white background with a blue R logo in the top left corner. On this page, there is a list of RTools versions to download, you should select the top most recent version."
+
+knitr::include_graphics("images/RTools_CRAN.PNG")
+
+```
+
+On the Rtools for Windows page (@fig-img-R-CRAN-windows-2), half way down you will see an Rtools installer link. Click this link and it will start downloading to your downloads folder. Double click on the file when it has finished downloading to start the installation process. 
+
+```{r img-RTools-CRAN-2, echo=FALSE}
+#| label: fig-img-RTools-CRAN-2
+#| fig.cap: "RTools44 page on the R CRAN site."
+#| fig.alt: "The CRAN site has a white background with a blue R logo in the top left corner. Half way down the page, there is a link to download the RTools44 file which is called Rtools44 installer."
+
+knitr::include_graphics("images/RTools_CRAN_2.PNG")
+
+```
+
+The first window will ask which folder on your computer you want RTools saving to (@fig-img-install-RTools-1). Like the R installation, the default should be your `C:` drive, and it is important you save it your computer's system files rather than in a cloud folder like OneDrive or DropBox. Click <if>Next</if>. 
+
+```{r img-install-RTools-1, echo=FALSE}
+#| label: fig-img-install-RTools-1
+#| fig.cap: "Rtools installation process: Select destination location."
+#| fig.alt: "The installation screen is a white and grey box. Here, the select destination page lets you browse through your computer files to choose a folder to save R in. The default should be a C: drive."
+
+knitr::include_graphics("images/install_RTools_1.PNG")
+
+```
+
+The select additional tasks window (@fig-img-install-RTools-1) asks if you want anything extra in the installation process, but keep these ticked/unticked as the defaults. Click <if>Next</if>. 
+
+```{r img-install-RTools-2, echo=FALSE}
+#| label: fig-img-install-RTools-2
+#| fig.cap: "Rtools installation process: Select additional tasks."
+#| fig.alt: "The installation screen is a white and grey box. Here, the select additional tasks page lets you select two options. Save version information should be ticked and create start menu icon should be unticked bt default."
+
+knitr::include_graphics("images/install_RTools_2.PNG")
+
+```
+
+The ready to install window (@fig-img-install-RTools-1) is the final step before the installation starts. Click <if>Install</if>. 
+
+```{r img-install-RTools-3, echo=FALSE}
+#| label: fig-img-install-RTools-3
+#| fig.cap: "Rtools installation process: Ready to install."
+#| fig.alt: "The installation screen is a white and grey box. Here, the ready to install page confirms the destination location and additional tasks before you click install."
+
+knitr::include_graphics("images/install_RTools_3.PNG")
+
+```
+
+Depending on your computer, it will take a few seconds to a few minutes to successfully install RTools (@fig-img-install-RTools-4). Click <if>Finish</if> to complete this part of the process. 
+
+```{r img-install-RTools-4, echo=FALSE}
+#| label: fig-img-install-RTools-4
+#| fig.cap: "Complete Rtools installation process."
+#| fig.alt: "The complete installation process is a white box confirming you have completed the setup process."
+
+knitr::include_graphics("images/install_RTools_4.PNG")
+
+```
+
+You never need to do anything with RTools, it just exists in the background to help install certain R packages. 
 
 ## Step 3 - Install RStudio
 
 If you closed the page down, go back to the [RStudio desktop download page here](https://posit.co/download/rstudio-desktop/){target="_blank"} which you can see in @fig-img-posit-install-windows.
 
-This page should recognise what your operating system (OS) is and the blue button will be customised to your OS. So, for a Windows user, it should prompt you to download RStudio for Windows. Clicking this link will start downloading the file to your downloads folder. 
+This page should recognise what your operating system (OS) is and the blue button will be customised to your OS. So, for a Windows user, it should prompt you to download RStudio for Windows. Clicking this link will start downloading the file to your downloads folder. Once it has finished downloading, double click on the file to start the installation process.
+
+The first page of the setup process (@fig-img-install-RTools-1) explains what it will do and requests you close down other programmes first. Click <if>Next ></if>. 
+
+```{r img-install-RStudio-1, echo=FALSE}
+#| label: fig-img-install-RStudio-1
+#| fig.cap: "RStudio installation process: Welcome."
+#| fig.alt: "The first installation page explains what RStudio is installing and requests you close down other programmes. The box is white with a blue computer logo on the left."
+
+knitr::include_graphics("images/install_RStudio_1_windows.png")
+
+```
+
+The install location page (@fig-img-install-RTools-2) confirms where on your computer it installs to. Like the other steps, this should be on your `C:` drive and be the default option. Just make sure it is not saving to a cloud drive like OneDrive or DropBox. Click <if>Next ></if>. 
+
+```{r img-install-RStudio-2, echo=FALSE}
+#| label: fig-img-install-RStudio-2
+#| fig.cap: "RStudio installation process: Choose install location."
+#| fig.alt: "The installation screen is a white and grey box. Here, the select destination page lets you browse through your computer files to choose a folder to save RStudio in. The default should be a C: drive."
+
+knitr::include_graphics("images/install_RStudio_2_windows.png")
+
+```
+
+The start menu page (@fig-img-install-RTools-3) allows you to select where RStudio will appear on your start menu. The default will just be a folder called RStudio, so keep the default option. Click <if>Next ></if>. 
+
+```{r img-install-RStudio-3, echo=FALSE}
+#| label: fig-img-install-RStudio-3
+#| fig.cap: "RStudio installation process: Choose start menu folder."
+#| fig.alt: "The box is white and grey. Here, you can choose a start menu folder to create as a shortcut. The default should be creating a folder called RStudio."
+
+knitr::include_graphics("images/install_RStudio_3_windows.png")
+```
+
+Depending on your computer, it will take a few seconds to a few minutes to successfully install RStudio (@fig-img-install-RStudio-4). Click <if>Finish</if> to complete this part of the process.  
+
+```{r img-install-RStudio-4, echo=FALSE}
+#| label: fig-img-install-RStudio-4
+#| fig.cap: "Complete RStudio installation process."
+#| fig.alt: "The complete installation process is a white box with a blue computer logo on the left confirming you have completed the setup process."
+
+knitr::include_graphics("images/install_RStudio_4_windows.png")
+```
+
+If you have successfully installed R and RStudio, you should see a fresh RStudio window (@fig-img-RStudio-fresh-windows) when you open it from the RStudio folder in your start menu. So you can always find it, when you open RStudio for the first time by clicking on it's blue and white R logo, right click and <if>Pin to taskbar</if>. This way, it will always be available via your taskbar at the bottom of the screen.
+
+```{r img-RStudio-fresh, echo=FALSE}
+#| label: fig-img-RStudio-fresh-windows
+#| fig.cap: "Default white theme RStudio window."
+#| fig.alt: "If the installation is successful, you can open RStudio as a piece of software on your computer. With default settings, it will open as a white background with three main windows: Console, Environment, and Files. "
+
+knitr::include_graphics("images/Fresh_RStudio.png")
+
+```
+
+You are now ready to start working with R/RStudio from your course materials! 
 
 ## Getting help for installation problems
 

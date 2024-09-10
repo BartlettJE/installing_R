@@ -14,10 +14,6 @@ book:
     name:
       family: Bartlett
       given: James
-  - orcid: 0000-0002-4191-5245
-    name:
-      family: Mahrholz
-      given: Gaby
   doi: ''
   license: CC-BY
   description: This guide provides instructions for installing R/RStudio for students at the University of Glasgow.

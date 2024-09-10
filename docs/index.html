@@ -36,7 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -207,11 +206,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level1 unnumbered">
 <h1 class="unnumbered">Overview</h1>
 <p>In this R(eady)SetGo guide, we demonstrate how to download and install the software R/RStudio on your computer which you will use throughout your degree. If you cannot download R/RStudio to your own computer, there is also a chapter guiding you through using the software on the library/lab computers.</p>
-<p>See <a href="installing-r-windows.html" class="quarto-xref"><span>1&nbsp; Installing R/RStudio for Windows</span></a> if you have a Windows computer.</p>
-<p>See <a href="installing-r-mac.html" class="quarto-xref"><span>2&nbsp; Installing R/RStudio for Mac</span></a> if you have a Mac.</p>
-<p>See <a href="installing-r-library.html" class="quarto-xref"><span>3&nbsp; Using R/RStudio on a University Computer</span></a> if you need to use the library/lab computers.</p>
-<p>Every now and again, you need to update R/RStudio or the packages you use, so there is <a href="updating-r.html" class="quarto-xref"><span>4&nbsp; Updating R, RStudio, and packages</span></a> to support you there.</p>
-<p>If you want to knit R Markdown files to PDF, you will need to install an extra package, so see <a href="install-tidytex.html" class="quarto-xref"><span>5&nbsp; Installing TinyTeX to knit PDF files</span></a>.</p>
+<p>See <a href="installing-r-windows.html">Chapter 1</a> if you have a Windows computer.</p>
+<p>See <a href="installing-r-mac.html">Chapter 2</a> if you have a Mac.</p>
+<p>See <a href="installing-r-library.html">Chapter 3</a> if you need to use the library/lab computers.</p>
+<p>Every now and again, you need to update R/RStudio or the packages you use, so there is <a href="updating-r.html">Chapter 4</a> to support you there.</p>
+<p>If you want to knit R Markdown files to PDF, you will need to install an extra package, so see <a href="install-tidytex.html">Chapter 5</a>.</p>
 
 
 </section>
@@ -848,13 +847,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -1260,7 +1252,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false,"descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

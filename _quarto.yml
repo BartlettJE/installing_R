@@ -6,6 +6,7 @@ project:
 execute:
   freeze: auto
 lightbox: true
+anchor-sections: true
 book:
   title: Installing R/RStudio Guide
   subtitle: ''

@@ -66,7 +66,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -218,7 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 </header><p>From time-to-time, updated version of R, RStudio, and the packages you use (e.g., ggplot) will become available. Remember that each of these are separate, so they each have a different process and come with different considerations. We recommend updating to the latest version of all three at the start of each academic year.</p>
-<section id="updating-rstudio" class="level2" data-number="4.1"><h2 data-number="4.1" class="anchored" data-anchor-id="updating-rstudio">
+<section id="updating-rstudio" class="level2" data-number="4.1"><h2 data-number="4.1" data-anchor-id="updating-rstudio">
 <span class="header-section-number">4.1</span> Updating RStudio</h2>
 <p>RStudio is the easiest component to update. Typically, updates to RStudio won’t affect your code, instead they add in new features, like spell-check or upgrades to what RStudio can do. There’s usually very little downside to updating RStudio and it’s easy to do.</p>
 <p>Click <if>Help &gt; Check for updates</if></p>
@@ -226,7 +225,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="images/update_rstudio.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Updating RStudio"><img src="images/update_rstudio.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Updating RStudio"></a></p>
+<figure class="figure"><p><a href="images/update_rstudio.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Updating RStudio"><img src="images/update_rstudio.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Updating RStudio"></a></p>
 </figure>
 </div>
 <figcaption>Updating RStudio</figcaption></figure>
@@ -234,10 +233,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>If an update is available, it will prompt you to download it and you can install it as usual.</p>
-</section><section id="updating-r" class="level2" data-number="4.2"><h2 data-number="4.2" class="anchored" data-anchor-id="updating-r">
+</section><section id="updating-r" class="level2" data-number="4.2"><h2 data-number="4.2" data-anchor-id="updating-r">
 <span class="header-section-number">4.2</span> Updating R</h2>
 <p>Finally, you may also wish to update R itself. The key thing to be aware of is that when you update R, if you just download the latest version from the website, you will lose all your packages.</p>
-<section id="windows" class="level3" data-number="4.2.1"><h3 data-number="4.2.1" class="anchored" data-anchor-id="windows">
+<section id="windows" class="level3" data-number="4.2.1"><h3 data-number="4.2.1" data-anchor-id="windows">
 <span class="header-section-number">4.2.1</span> Windows</h3>
 <p>The easiest way to update R on Windows and not cause yourself a huge headache is to use the <pkg>installr</pkg> package. When you use the <code>updateR()</code> function, a series of dialogue boxes will appear. These should be fairly self-explanatory but there is a <a href="https://www.r-statistics.com/2015/06/a-step-by-step-screenshots-tutorial-for-upgrading-r-on-windows/">full step-by-step guide available</a> for how to use <code>installr</code>, the important bit is to select “Yes” when it asked if you would like to copy your packages from the older version of R.</p>
 <div class="cell" data-layout-align="center">
@@ -247,7 +246,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co"># Run the update function</span></span>
 <span id="cb1-5"><a href="#cb1-5"></a>installR<span class="sc">::</span><span class="fu">updateR</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="mac" class="level3" data-number="4.2.2"><h3 data-number="4.2.2" class="anchored" data-anchor-id="mac">
+</section><section id="mac" class="level3" data-number="4.2.2"><h3 data-number="4.2.2" data-anchor-id="mac">
 <span class="header-section-number">4.2.2</span> Mac</h3>
 <p>For a Mac, you can use the <a href="https://github.com/AndreaCirilloAC/updateR"><pkg>updateR</pkg></a> package. You’ll need to install this from GitHub. You will be asked to type your system password (that you use to log into your computer) in the console pane. If relevant, it will ask you if you want to restore your packages for a new major version.</p>
 <div class="cell" data-layout-align="center">
@@ -257,7 +256,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-4"><a href="#cb2-4"></a><span class="co"># update your R version, you will need your system password</span></span>
 <span id="cb2-5"><a href="#cb2-5"></a>updateR<span class="sc">::</span><span class="fu">updateR</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section></section><section id="updating-packages" class="level2" data-number="4.3"><h2 data-number="4.3" class="anchored" data-anchor-id="updating-packages">
+</section></section><section id="updating-packages" class="level2" data-number="4.3"><h2 data-number="4.3" data-anchor-id="updating-packages">
 <span class="header-section-number">4.3</span> Updating packages</h2>
 <p>Package developers will occasionally release updates to their packages. This is typically to add in new functions to the package, or to fix or amend existing functions. <strong>Be aware that some package updates may cause your previous code to stop working</strong>. This does not tend to happen with minor updates to packages, but occasionally with major updates, you can have serious issues if the developer has made fundamental changes to how the code works. For this reason, we recommend updating all your packages once at the beginning of each academic year (or semester) - don’t do it before an assessment or deadline just in case!</p>
 <p>To update an individual package, the easiest way is to use the <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages()</a></code> function, as this always installs the most recent version of the package.</p>
@@ -269,17 +268,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="images/update_packages.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="Updating packages with RStudio"><img src="images/update_packages.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Updating packages with RStudio"></a></p>
+<figure class="figure"><p><a href="images/update_packages.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="Updating packages with RStudio"><img src="images/update_packages.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Updating packages with RStudio"></a></p>
 </figure>
 </div>
 <figcaption>Updating packages with RStudio</figcaption></figure>
 </div>
 </div>
 </div>
-</section><section id="sec-package-install-troubleshooting" class="level2" data-number="4.4"><h2 data-number="4.4" class="anchored" data-anchor-id="sec-package-install-troubleshooting">
+</section><section id="sec-package-install-troubleshooting" class="level2" data-number="4.4"><h2 data-number="4.4" data-anchor-id="sec-package-install-troubleshooting">
 <span class="header-section-number">4.4</span> Troubleshooting</h2>
 <p>Occasionally, you might have a few problem packages that seemingly refuse to update. For me, <code>rlang</code> and <code>vctrs</code> cause me no end of trouble. These aren’t packages that you will likely every explicitly load, but they’re required beneath the surface for R to do things like knit your Markdown files etc.</p>
-<section id="non-zero-exit-status" class="level3" data-number="4.4.1"><h3 data-number="4.4.1" class="anchored" data-anchor-id="non-zero-exit-status">
+<section id="non-zero-exit-status" class="level3" data-number="4.4.1"><h3 data-number="4.4.1" data-anchor-id="non-zero-exit-status">
 <span class="header-section-number">4.4.1</span> Non-zero exit status</h3>
 <p>If you try to update a package and get an error message that says something like <code>Warning in install.packages : installation of package ‘vctrs’ had non-zero exit status</code> or perhaps <code>Error in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]) :  namespace 'rlang' 0.4.9 is being loaded, but &gt;= 0.4.10 is required</code> one solution I have found is to manually uninstall the package, restart R, and then install the package new, rather than trying to update an existing version. The <code>installr</code> package also has a useful function for uninstalling packages.</p>
 <div class="cell" data-layout-align="center">
@@ -294,7 +293,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-9"><a href="#cb4-9"></a></span>
 <span id="cb4-10"><a href="#cb4-10"></a><span class="fu">install.packages</span>(<span class="st">"package"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="cannot-open-file" class="level3" data-number="4.4.2"><h3 data-number="4.4.2" class="anchored" data-anchor-id="cannot-open-file">
+</section><section id="cannot-open-file" class="level3" data-number="4.4.2"><h3 data-number="4.4.2" data-anchor-id="cannot-open-file">
 <span class="header-section-number">4.4.2</span> Cannot open file</h3>
 <p>You may get the following error after trying to install any packages at all:</p>
 <blockquote class="blockquote">
@@ -719,13 +718,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -1130,7 +1122,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>
   </div>
-</footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","loop":false});
+</footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":false,"closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

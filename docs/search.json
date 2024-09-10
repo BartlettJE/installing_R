@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Installing R/RStudio Guide",
     "section": "",
-    "text": "Overview\nIn this R(eady)SetGo guide, we demonstrate how to download and install the software R/RStudio on your computer which you will use throughout your degree. If you cannot download R/RStudio to your own computer, there is also a chapter guiding you through using the software on the library/lab computers.\nSee 1  Installing R/RStudio for Windows if you have a Windows computer.\nSee 2  Installing R/RStudio for Mac if you have a Mac.\nSee 3  Using R/RStudio on a University Computer if you need to use the library/lab computers.\nEvery now and again, you need to update R/RStudio or the packages you use, so there is 4  Updating R, RStudio, and packages to support you there.\nIf you want to knit R Markdown files to PDF, you will need to install an extra package, so see 5  Installing TinyTeX to knit PDF files.",
+    "text": "Overview\nIn this R(eady)SetGo guide, we demonstrate how to download and install the software R/RStudio on your computer which you will use throughout your degree. If you cannot download R/RStudio to your own computer, there is also a chapter guiding you through using the software on the library/lab computers.\nSee Chapter 1 if you have a Windows computer.\nSee Chapter 2 if you have a Mac.\nSee Chapter 3 if you need to use the library/lab computers.\nEvery now and again, you need to update R/RStudio or the packages you use, so there is Chapter 4 to support you there.\nIf you want to knit R Markdown files to PDF, you will need to install an extra package, so see Chapter 5.",
     "crumbs": [
       "Overview"
     ]

@@ -2,14 +2,14 @@
 
 In this R(eady)SetGo guide, we demonstrate how to download and install the software R/RStudio on your computer which you will use throughout your degree. If you cannot download R/RStudio to your own computer, there is also a chapter guiding you through using the software on the library/lab computers. 
 
-See @sec-installing-r-windows if you have a Windows computer. 
+See [Chapter 1](#sec-installing-r-windows) if you have a Windows computer. 
 
-See @sec-installing-r-mac if you have a Mac. 
+See [Chapter 2](#sec-installing-r-mac) if you have a Mac. 
 
-See @sec-library-computer if you need to use the library/lab computers. 
+See [Chapter 3](#sec-library-computer) if you need to use the library/lab computers. 
 
-Every now and again, you need to update R/RStudio or the packages you use, so there is @sec-updating-r to support you there. 
+Every now and again, you need to update R/RStudio or the packages you use, so there is [Chapter 4](#sec-updating-r) to support you there. 
 
-If you want to knit R Markdown files to PDF, you will need to install an extra package, so see @sec-install-tinytex. 
+If you want to knit R Markdown files to PDF, you will need to install an extra package, so see [Chapter 5](#sec-install-tinytex). 
 
 
